@@ -11,13 +11,13 @@
 
 body {
   display: flex;
-  max-width: 100%;
+  width: 100%;
 }
 
 .content-left {
   display: flex;
   flex-direction: column;
-  width: 760px;
+  width: 40%;
   height: 978px;
   background-image: url(./bg-img.jpg);
   background-size: cover;
@@ -118,6 +118,14 @@ button {
   border: none;
   font-size: 20px;
   font-weight: bold;
+}
+
+button:hover {
+  background-color: #3e99b3;
+}
+
+button:active {
+  border: 2px solid black;
 }
 
 .content-right-footer > p > a {
