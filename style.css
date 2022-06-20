@@ -75,7 +75,7 @@ img {
   height: 310px;
   background-color: white;
   padding-left: 50px;
-  font-size: 16px;
+  font-size: 14px;
   color: #63666A;
 }
 
@@ -136,4 +136,23 @@ button:active {
 
 .content-right-footer > p > a:visited {
   color: #28697b;
+}
+
+input + span {
+  position: relative;
+}
+
+input:required + span::after {
+  position: absolute;
+  content: "required";
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  top: -33px;
+  left: -72px;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
 }
